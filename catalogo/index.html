@@ -1,766 +1,1331 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/catalogo/static/jume.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta
-			name="description"
-			content="Jumelab productos y servicios. Aplicaciones lúdicas adaptables a tu marca o identidad."
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="/catalogo/dist/assets/css/style.min.css" />
-  		<script defer src="/catalogo/dist/assets/js/index.js"></script>
-		<title>Catálogo | Aplicaciones lúdicas</title>
-	</head>
-	<body id="top">
-		<nav class="main-nav">
-			<div class="logo">
-				<a href="https://jumelab.com.ar" aria-label="Home">
-					<span style="display: none;">Home</span>
-					<img
-						class="reveal"
-						data-reveal="y=-20"
-						src="/catalogo/dist/assets/images/jumelab.svg"
-						alt="Logo Jumelab"
-					/>
-				</a>
-			</div>
-			<div class="main-menu">
-				<ul>
-					<li>
-						<a class="local-nav" data-sto="#que" href="#">
-							¿Qué es?
-						</a>
-					</li>
-					<li>
-						<a class="local-nav" data-sto="#pasos" href="#">
-							Pasos
-						</a>
-					</li>
-					<li>
-						<a class="local-nav" data-sto="#apps" href="#">
-							Aplicaciones
-						</a>
-					</li>
-					<li>
-						<a class="local-nav" data-sto="#contacto" href="#">
-							Escribinos
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="menu-mobile-btn">
-				<button class="menu-button">
-				</button>
-			</div>
-		</nav>		<main class="main-content">
-			<section id="hero" class="hero">
-	<video id="video-hero" class="video-hero" width="100%" height="400" autoplay loop muted>
-		<source src="/catalogo/dist/assets/videos/header.mp4" type="video/mp4" />
-		Your browser does not support the video tag.
-	</video>
-	<h1 class="title">Aplicaciones lúdicas</h1>
-	<h3 class="sub-title">Catálogo</h3>
-</section>
-<section id="que" class="servicios bg1">
-	<h3 class="title">¿Qué es?</h3>
-	<p class="text">
-		Es un servicio de aplicaciones adaptables a tu identidad o marca. Son
-		contenidos que permiten la interacción lúdica con tu público y de rápida
-		implementación.
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="icon"
+            href="/catalogo/static/jume.svg"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <meta
+            name="description"
+            content="Jumelab productos y servicios. Aplicaciones lúdicas adaptables a tu marca o identidad."
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="/catalogo/dist/assets/css/style.min.css"
+        />
+        <script
+            defer
+            src="/catalogo/dist/assets/js/index.js"
+        ></script>
+        <title>Catálogo | Aplicaciones lúdicas</title>
+    </head>
+    <body id="top">
+        <nav class="main-nav">
+            <div class="logo">
+                <a
+                    href="https://jumelab.com.ar"
+                    aria-label="Home"
+                >
+                    <span style="display: none">Home</span>
+                    <img
+                        class="reveal"
+                        data-reveal="y=-20"
+                        src="/catalogo/dist/assets/images/jumelab.svg"
+                        alt="Logo Jumelab"
+                    />
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a
+                            class="local-nav"
+                            data-sto="#que"
+                            href="#"
+                        >
+                            ¿Qué es?
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="local-nav"
+                            data-sto="#pasos"
+                            href="#"
+                        >
+                            Pasos
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="local-nav"
+                            data-sto="#apps"
+                            href="#"
+                        >
+                            Aplicaciones
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="local-nav"
+                            data-sto="#contacto"
+                            href="#"
+                        >
+                            Escribinos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-mobile-btn">
+                <button class="menu-button"></button>
+            </div>
+        </nav>
+        <main class="main-content">
+            <section
+                id="hero"
+                class="hero"
+            >
+                <video
+                    id="video-hero"
+                    class="video-hero"
+                    width="100%"
+                    height="400"
+                    autoplay
+                    loop
+                    muted
+                >
+                    <source
+                        src="/catalogo/dist/assets/videos/header.mp4"
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+                <h1 class="title">Aplicaciones lúdicas</h1>
+                <h3 class="sub-title">Catálogo</h3>
+            </section>
+            <section
+                id="que"
+                class="servicios bg1"
+            >
+                <h3 class="title">¿Qué es?</h3>
+                <p class="text">
+                    Es un servicio de aplicaciones adaptables a tu identidad o
+                    marca. Son contenidos que permiten la interacción lúdica con
+                    tu público y de rápida implementación.
+                </p>
+            </section>
+            <section
+                id="donde"
+                class="servicios bg2"
+            >
+                <h3 class="title">¿Se puede personalizar?</h3>
+                <p class="text">
+                    Por supuesto. Cada aplicación incluye paneles y/o documentos
+                    para poder reconfigurar rápidamente la aplicación según la
+                    necesidad. Cuentan con la posibilidad de insertar logos en
+                    la pantalla inicial y/o final, fondos con diseños, como
+                    también utilizar una base de datos inicial para registrar
+                    Nombre y Mail de los usuarios.
+                </p>
+            </section>
+            <section
+                id="como"
+                class="servicios bg3"
+            >
+                <h3 class="title">¿Dónde puede funcionar esta aplicación?</h3>
+                <p class="text">
+                    La mejor forma de presentarla es a través de un Kiosco /
+                    Tótem Interactivo. <br />Podés contratar un
+                    <a
+                        target="_blank"
+                        href="https://docs.google.com/document/d/1S6D_GGKibe6GwQ3fFhhesualsis8_9yDXkyQtQBCD-Y/edit?usp=sharing"
+                        >KIOSCO/ TÓTEM</a
+                    >
+                    provisto por Jumelab, o bien te enviamos la APLICACIÓN
+                    DESCARGABLE para su instalación en una PC o móvil con
+                    cualquiera de estos sistemas operativos
+                    Win/Mac/Linux/Android.
+                </p>
+            </section>
+            <section
+                id="pasos"
+                class="servicios servicios-pasos bg4"
+            >
+                <h3 class="title">Pasos</h3>
+                <div class="pasos">
+                    <div>
+                        <img
+                            src="/catalogo/dist/assets/images/app1.svg"
+                            alt="Elegís"
+                        />
+                        <p class="text">1. Elegís la aplicación</p>
+                    </div>
+                    <div>
+                        <img
+                            src="/catalogo/dist/assets/images/app2.svg"
+                            alt="Adaptás"
+                        />
+                        <p class="text">2. Jumelab la adapta a tu identidad</p>
+                    </div>
+                    <div>
+                        <img
+                            src="/catalogo/dist/assets/images/app3.svg"
+                            alt="Activás"
+                        />
+                        <p class="text">3. Definís cómo activarla</p>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="apps"
+                class="servicios bg3"
+            >
+                <h3 class="title">Aplicaciones</h3>
+                <div class="apps-container">
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Ruleta</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#ruleta"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/ruleta.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Trivia</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#trivia"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/trivia.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">9 Fichas</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#_9f"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/9f.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Tragamonedas</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#traga"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/traga.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Muñecos saltarines</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#munecos"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/munecos.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Plataforma</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#platafo"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/platafo.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Gifmaton</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#gif"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/gif.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="app">
+                        <div class="over">
+                            <h4 class="name">Rompecabezas</h4>
+                        </div>
+                        <a
+                            class="local-nav"
+                            data-sto="#rompec"
+                            href=""
+                        >
+                        </a>
+                        <img
+                            src="/catalogo/dist/assets/images/slider/rompecabeza.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section
+                id="ruleta"
+                class="servicios bgb"
+            >
+                <h3 class="title-info">Ruleta</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/ruleta.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Es un juego de ruleta que tiene opciones de
+                                distintos tamaños. Se hace girar la ruleta a una
+                                velocidad x, según la potencia que sale en
+                                pantalla. Cuando sale la opción, aparece cartel
+                                con el premio de la opción. Pueden ser la
+                                cantidad de opciones que se desea. Simétricas o
+                                asimétricas.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch, desde un
+                                        teclado o jostick
+                                    </li>
+                                    <li>
+                                        Con limitador para las opciones:
+                                        Cantidad de premios por opción
+                                    </li>
+                                    <li>
+                                        Posibilidad de generar textos y/o
+                                        imágenes en las opciones
+                                    </li>
+                                    <li>
+                                        Opciones en imagen de los resultados de
+                                        la Ruleta, para visualizarlo al costado
+                                    </li>
+                                    <li>
+                                        Color de la flecha y de la potencia
+                                        editables
+                                    </li>
+                                    <li>
+                                        Opciones en imagen de los resultados de
+                                        la Ruleta, para visualizarlo al costado.
+                                    </li>
+                                </ul>
 
-	</p>
-</section>
-<section id="donde" class="servicios bg2">
-	<h3 class="title">¿Se puede personalizar?</h3>
-	<p class="text">
-		Por supuesto. Cada aplicación incluye paneles y/o documentos para poder
-		reconfigurar rápidamente la aplicación según la necesidad. Cuentan con
-		la posibilidad de insertar logos en la pantalla inicial y/o final,
-		fondos con diseños, como también utilizar una base de datos inicial para
-		registrar Nombre y Mail de los usuarios.
-	</p>
-</section>
-<section id="como" class="servicios bg3">
-	<h3 class="title">¿Dónde puede funcionar esta aplicación? </h3>
-	<p class="text">
-		La mejor forma de presentarla es a través de un Kiosco / Tótem
-		Interactivo. <br>Podés contratar un <a target="_blank" href="https://docs.google.com/document/d/1S6D_GGKibe6GwQ3fFhhesualsis8_9yDXkyQtQBCD-Y/edit?usp=sharing">KIOSCO/ TÓTEM</a> provisto por Jumelab, o
-		bien te enviamos la APLICACIÓN DESCARGABLE para su instalación en una PC
-		o móvil con cualquiera de estos sistemas operativos
-		Win/Mac/Linux/Android.
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/LMei6cE9r58"
+                                        >
+                                            Ver video de referencia
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 320.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-	</p>
-</section>
-<section id="pasos" class="servicios servicios-pasos bg4">
-	<h3 class="title">Pasos</h3>
-	<div class="pasos">
-		<div>
-			<img src="/catalogo/dist/assets/images/app1.svg" alt="Elegís">
-			<p class="text">
-				1. Elegís la aplicación
-			</p>
-		</div>
-		<div>
-			<img src="/catalogo/dist/assets/images/app2.svg" alt="Adaptás">
-			<p class="text">
-				2. Jumelab la adapta a tu identidad
-			</p>
-		</div>
-		<div>
-			<img src="/catalogo/dist/assets/images/app3.svg" alt="Activás">
-			<p class="text">
-				3. Definís cómo activarla
-			</p>
-		</div>
-	</div>
-</section>
-<section id="apps" class="servicios bg3">
-	<h3 class="title">Aplicaciones</h3>
-	<div class="apps-container">
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Ruleta</h4>
-			</div>
-			<a class="local-nav" data-sto="#ruleta" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/ruleta.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Trivia</h4>
-			</div>
-			<a class="local-nav" data-sto="#trivia" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/trivia.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">9 Fichas</h4>
-			</div>
-			<a class="local-nav" data-sto="#_9f" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/9f.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Tragamonedas</h4>
-			</div>
-			<a class="local-nav" data-sto="#traga" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/traga.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Muñecos saltarines</h4>
-			</div>
-			<a class="local-nav" data-sto="#munecos" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/munecos.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Plataforma</h4>
-			</div>
-			<a class="local-nav" data-sto="#platafo" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/platafo.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Gifmaton</h4>
-			</div>
-			<a class="local-nav" data-sto="#gif" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/gif.jpg" alt="">
-		</div>
-		<div class="app">
-			<div class="over">
-				<h4 class="name">Rompecabezas</h4>
-			</div>
-			<a class="local-nav" data-sto="#rompec" href="">
-			</a>
-			<img src="/catalogo/dist/assets/images/slider/rompecabeza.jpg" alt="">
-		</div>
-	</div>
-</section>
-<section id="ruleta" class="servicios bgb">
-	<h3 class="title-info">Ruleta</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/ruleta.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Es un juego de ruleta que tiene opciones de distintos tamaños. Se hace girar la ruleta a una velocidad x, según la potencia que sale en pantalla. Cuando sale la opción, aparece cartel con el premio de la opción.
-Pueden ser la cantidad de opciones que se desea. Simétricas o asimétricas.
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="trivia"
+                class="servicios bg4"
+            >
+                <h3 class="title-info">Trivia</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/trivia.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                <h5 class="subtitle">
+                                    Ruleta inicial para jugar con Temáticas
+                                    (opcional)
+                                </h5>
+                                <p>
+                                    Al inicio existe la opción de que el juego
+                                    cuente con una ruleta que se hace girar -a
+                                    una velocidad x, según la potencia- al
+                                    comienzo de cada pregunta para elegir la
+                                    temática/categoría. De esta manera, se juega
+                                    con (4) distintas temáticas o categorías,
+                                    según la necesidad del producto.
+                                </p>
+                                <h5 class="subtitle">Trivia:</h5>
+                                Luego ingresan de modo animado tanto la pregunta
+                                como las 3 posibles respuestas mezcladas, donde
+                                solo una es la correcta. Cada pregunta tiene un
+                                tiempo determinado para ser respondida. En la
+                                parte superior se muestra el tiempo que va
+                                avanzando mediante un slider que se va pintando.
+                                Si se ingresa una respuesta correcta, el botón
+                                se pinta de verde. En caso contrario, el botón
+                                se pintará de rojo. Luego de cada pregunta, los
+                                botones de las respuestas y la misma pregunta se
+                                retiran del espacio de manera animada, dando
+                                lugar a que el sistema siga con la siguiente
+                                pregunta. Luego de una cierta cantidad de
+                                preguntas, el sistema muestra en un panel la
+                                cantidad de preguntas acertadas y/o el
+                                porcentaje.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch, desde un
+                                        teclado o jostick
+                                    </li>
+                                    <li>
+                                        Con Ruleta inicial: Hasta 30 preguntas
+                                        (hasta 240 caracteres) por temática con
+                                        sus respectivas (3)respuestas.
+                                        C/temática puede tener cantidades de
+                                        preguntas diferentes. (hasta 120
+                                        caracteres)
+                                    </li>
+                                    <li>
+                                        Sin Ruleta inicial: 90 preguntas sin
+                                        temática, con sus (3) respuestas por
+                                        pregunta.
+                                    </li>
+                                    <li>
+                                        Nivel de Dificultad (1 - 8). Para que
+                                        los premios salgan a menor o mayor ritmo
+                                    </li>
+                                    <li>
+                                        Color de la flecha y de la potencia
+                                        editables
+                                    </li>
+                                </ul>
 
-				</div>
-				<div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch, desde un teclado o jostick</li>
-						<li>Con limitador para las opciones: Cantidad de premios por opción</li>
-						<li>Posibilidad de generar textos y/o imágenes en las opciones</li>
-						<li>Opciones en imagen de los resultados de la Ruleta, para visualizarlo al costado</li>
-						<li>Color de la flecha y de la potencia editables</li>
-						<li>Opciones en imagen de los resultados de la Ruleta, para visualizarlo al costado.</li>
-					</ul>
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://vimeo.com/293744138 "
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 378.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/LMei6cE9r58">
-								Ver video de referencia
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 320.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
 
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-<section id="trivia" class="servicios bg4">
-	<h3 class="title-info">Trivia</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/trivia.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					<h5 class="subtitle">
+            <section
+                id="_9f"
+                class="servicios bgb"
+            >
+                <h3 class="title-info">9 Fichas</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/9f.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Ingresan 9 fichas con 3 tipos de premios
+                                mezclados y escondidos en la cara de abajo. En
+                                un determinado tiempo, uno puede seleccionar y
+                                deseleccionar las fichas hasta que -al final- se
+                                eligen 3. Si todas muestran el mismo premio, se
+                                gana. La app da pie a variadas opciones de juego
+                                y de dificultad. Como preset tenemos tres
+                                posibilidades del juego: (1) Utilizando colores
+                                para memorizar la ubicación de los premios. (2)
+                                Utilizando varias opciones de elección para
+                                acertar. (3) Utilizando solo una opción.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5>
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch o desde un
+                                        teclado
+                                    </li>
+                                    <li>
+                                        Con limitador para las opciones:
+                                        Cantidad de premios por opción
+                                    </li>
+                                    <li>
+                                        Posibilidad de editar textos de los
+                                        premios, o utilizar imágenes para ello
+                                    </li>
+                                </ul>
 
-					Ruleta inicial para jugar con Temáticas (opcional) 
-					</h5>
-					<p>
-						Al inicio existe la opción de que el juego cuente con una ruleta que se hace girar -a una velocidad x, según la potencia- al comienzo de cada pregunta para elegir la temática/categoría. De esta manera, se juega con (4) distintas temáticas o categorías, según la necesidad del producto.
-					</p>
-				<h5 class="subtitle">Trivia: </h5>
-				Luego ingresan de modo animado tanto la pregunta como las 3 posibles respuestas mezcladas, donde solo una es la correcta. Cada pregunta tiene un tiempo determinado para ser respondida. En la parte superior se muestra el tiempo que va avanzando mediante un slider que se va pintando. Si se ingresa una respuesta correcta, el botón se pinta de verde. En caso contrario, el botón se pintará de rojo. Luego de cada pregunta, los botones de las respuestas y la misma pregunta se retiran del espacio de manera animada, dando lugar a que el sistema siga con la siguiente pregunta. Luego de una cierta cantidad de preguntas, el sistema muestra en un panel la cantidad de preguntas acertadas y/o el porcentaje.
+                                <h5>¿En cuanto tiempo lo tengo?</h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5>Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/UkOwN2Ir0uE "
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 378.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-				</div>
-				<div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch, desde un teclado o jostick</li>
-						<li>Con Ruleta inicial: Hasta 30 preguntas (hasta 240 caracteres)  por temática con sus respectivas (3)respuestas. C/temática puede tener cantidades de preguntas diferentes. (hasta 120 caracteres)</li>
-						<li>Sin Ruleta inicial: 90 preguntas sin temática, con sus (3) respuestas por pregunta.</li>
-						<li>Nivel de Dificultad (1 - 8). Para que los premios salgan a menor o mayor ritmo</li>
-						<li>Color de la flecha y de la potencia editables</li>
-					</ul>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="traga"
+                class="servicios bg4"
+            >
+                <h3 class="title-info">Tragamonedas</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/traga.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Se juega presionando una (1) tecla. El tambor
+                                del estilo del tragamonedas gira a distintas
+                                velocidades según cuánto se mantenga presionado
+                                el botón. La interfaz muestra un vúmetro para
+                                visualizar la potencia de la tecla. Cuando sale
+                                la opción en el tambor, aparece cartel al
+                                costado con el premio de la opción.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch, desde un
+                                        teclado o jostick
+                                    </li>
+                                    <li>
+                                        Con limitador para las opciones:
+                                        Cantidad de premios por opción
+                                    </li>
+                                    <li>
+                                        Con tambor de tragamonedas con 10
+                                        posibilidades de premios + opción “Siga
+                                        participando” + opción "Otra
+                                        oportunidad"
+                                    </li>
+                                    <li>
+                                        Nivel de Dificultad (1 - 8). Para que
+                                        los premios salgan a menor o mayor ritmo
+                                    </li>
+                                    <li>
+                                        Color de la flecha y de la potencia
+                                        editables
+                                    </li>
+                                </ul>
 
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://vimeo.com/293744138 ">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 378.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span> 
-					</p>
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/JtORdDRTJKg"
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 378.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
 
-<section id="_9f" class="servicios bgb">
-	<h3 class="title-info">9 Fichas</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/9f.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Ingresan 9 fichas con 3 tipos de premios mezclados y escondidos en la cara de abajo. En un determinado tiempo, uno puede seleccionar y deseleccionar las fichas hasta que -al final- se eligen 3. Si todas muestran el mismo premio, se gana. La app da pie a variadas opciones de juego y de dificultad. Como preset tenemos tres posibilidades del juego: (1) Utilizando colores para memorizar la ubicación de los premios. (2) Utilizando varias opciones de elección para acertar. (3) Utilizando solo una opción.
+            <section
+                id="munecos"
+                class="servicios bgb"
+            >
+                <h3 class="title-info">Muñecos saltarines</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/munecos.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Se juega presionando (6) teclas, que tienen la
+                                función de martillos. Estos golpean a muñecos
+                                para que salten e intenten golpear (1) objeto
+                                -globos/burbujas- que va cayendo repetidamente
+                                desde el cielo. Al golpearlas obtienen puntos
+                                que se van mostrando junto con un tiempo para
+                                intentar golpear la mayor cantidad de
+                                globos/burbujas.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juego desde un LCD touch, desde un
+                                        teclado o jostick
+                                    </li>
+                                    <li>
+                                        Imagen del objeto configurable. Hasta
+                                        (3) objetos
+                                    </li>
+                                </ul>
 
-				</div><div class="tab tab-2">
-					<h5>
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch o desde un teclado</li>
-						<li>Con limitador para las opciones: Cantidad de premios por opción</li>
-						<li>Posibilidad de editar textos de los premios, o utilizar imágenes para ello</li>
-						
-					</ul>
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/VRYS1qL5A0c "
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 320.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-					<h5>
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5>
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/UkOwN2Ir0uE ">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 378.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="platafo"
+                class="servicios bg4"
+            >
+                <h3 class="title-info">Juego de plataforma</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/platafo.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Es un juego de plataforma con fondos parallax,
+                                enemigos que hay que esquivar, premios que hay
+                                que ir encontrando, en un tiempo determinado. Se
+                                juega desde el teclado o desde un joystick.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch, desde un
+                                        teclado o jostick
+                                    </li>
+                                    <li>
+                                        Color de la Ropa del personaje y del
+                                        puntaje editables.
+                                    </li>
+                                    <li>
+                                        Imagen del premio configurable. (1)
+                                        premio.
+                                    </li>
+                                    <li>
+                                        Fondo fijo editable, detrás de los
+                                        edificios.
+                                    </li>
+                                </ul>
 
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-<section id="traga" class="servicios bg4">
-	<h3 class="title-info">Tragamonedas</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/traga.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Se juega presionando una (1) tecla. El tambor del estilo del tragamonedas gira a distintas velocidades según cuánto se mantenga presionado el botón. La interfaz muestra un vúmetro para visualizar la potencia de la tecla. Cuando sale la opción en el tambor, aparece cartel al costado con el premio de la opción.
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/ioRjN7Ged9A"
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 320.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-				</div><div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch, desde un teclado o jostick</li>
-						<li>Con limitador para las opciones: Cantidad de premios por opción</li>
-						<li>Con tambor de tragamonedas con 10 posibilidades de premios + opción “Siga participando” + opción "Otra oportunidad"</li>
-						<li>Nivel de Dificultad (1 - 8). Para que los premios salgan a menor o mayor ritmo</li>
-						<li>Color de la flecha y de la potencia editables</li>
-					</ul>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="gif"
+                class="servicios bgb"
+            >
+                <h3 class="title-info">Gifmaton</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/gif.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                La gente se coloca frente a una cámara y se
+                                visualiza en una pantalla en espejo. Luego de
+                                una cuenta regresiva, la app empieza a generar
+                                un GIF animado. El GIF resultante -GIF loopeado
+                                que corre hacia adelante y cuando llega al final
+                                corre hacia atrás- se muestra en el costado de
+                                la pantalla. En ese espacio, pueden verse los
+                                últimos GIF que se han generado. A la vez, los
+                                GIF son descargados a una carpeta de la
+                                computadora para que sean subidos -manualmente-
+                                a las redes sociales por el cliente. (Consultar
+                                por subidas automáticas)
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Marca de Agua -con logo y/o otras
+                                        imágenes- que se muestra por arriba del
+                                        video en el GIF resultante. PNG 800 x
+                                        600px
+                                    </li>
+                                    <li>Duración del GIF modificable</li>
+                                    <li>
+                                        FrameRate del GIF modificable (para que
+                                        quede más realista o más cómico)
+                                    </li>
+                                </ul>
 
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/JtORdDRTJKg">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 378.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/yLjQh2qr-b8"
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 210.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="rompec"
+                class="servicios bgb"
+            >
+                <h3 class="title-info">Rompecabezas</h3>
+                <div class="apps-info">
+                    <div class="image">
+                        <img
+                            src="/catalogo/dist/assets/images/slider/rompecabeza.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="desc tab-component">
+                        <div class="btns btns-tab">
+                            <button data-tab="tab-1">Dinámica</button>
+                            <button data-tab="tab-2">Diseño</button>
+                            <button data-tab="tab-3">Precio</button>
+                            <a
+                                href="#"
+                                class="local-nav"
+                                data-sto="#apps"
+                            >
+                                <span>Catálogo</span>
+                                <img
+                                    src="/catalogo/dist/assets/images/che.svg"
+                                    alt="up"
+                                />
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab tab-1">
+                                Los participantes deberán resolver un
+                                rompecabezas personalizado con la imagen o video
+                                de tu marca.
+                            </div>
+                            <div class="tab tab-2">
+                                <h5 class="subtitle">
+                                    ¿Qué puede editarse del diseño y del juego?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Formato de pantalla Horizontal 16:9 o
+                                        Vertical 9:16
+                                    </li>
+                                    <li>
+                                        Se juega desde un LCD touch, o desde un
+                                        ratón / pad
+                                    </li>
+                                    <li>
+                                        Formato de rompecabezas: imagen o video
+                                        corto
+                                    </li>
+                                    <li>
+                                        Opciones de dificultad. Fácil: cubo
+                                        (3x3) de 9 partes. Difícil: rectángulo
+                                        de 15 partes (5x3)
+                                    </li>
+                                    <li>Tiempo de juego modificable</li>
+                                    <li>
+                                        CPosibilidad de editar textos del
+                                        resultado del juego: ¡LO LOGRASTE!,
+                                        ¡INTÉNTALO DE NUEVO!, etc.
+                                    </li>
+                                </ul>
 
-<section id="munecos" class="servicios bgb">
-	<h3 class="title-info">Muñecos saltarines</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/munecos.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Se juega presionando (6) teclas, que tienen la función de martillos. Estos golpean a muñecos para que salten e intenten golpear (1) objeto -globos/burbujas- que va cayendo repetidamente desde el cielo. Al golpearlas obtienen puntos que se van mostrando junto con un tiempo para intentar golpear la mayor cantidad de globos/burbujas.
+                                <h5 class="subtitle">
+                                    ¿En cuanto tiempo lo tengo?
+                                </h5>
+                                <ul>
+                                    <li>
+                                        Tiempo de configuración: 4 días mínimo
+                                    </li>
+                                </ul>
+                                <h5 class="subtitle">Referencia</h5>
+                                <ul>
+                                    <li>
+                                        <a
+                                            target="_blank"
+                                            href="https://youtu.be/UGuNLQ0xuQg"
+                                        >
+                                            Ver video de referencia
+                                            <img
+                                                src="/catalogo/dist/assets/images/video.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab tab-3">
+                                <p class="precio">
+                                    El precio base es de $ 210.000.-
+                                    <br />
+                                    <span>Válido hasta el 1/9/2024</span>
+                                </p>
 
-
-				</div><div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juego desde un LCD touch, desde un teclado o jostick</li>
-						<li> Imagen del objeto configurable. Hasta (3) objetos</li>
-					</ul>
-
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/VRYS1qL5A0c ">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 320.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
-
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-<section id="platafo" class="servicios bg4">
-	<h3 class="title-info">Juego de plataforma</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/platafo.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Es un juego de plataforma con fondos parallax, enemigos que hay que esquivar, premios que hay que ir encontrando, en un tiempo determinado. Se juega desde el teclado o desde un joystick.
-
-
-				</div><div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch, desde un teclado o jostick</li>
-						<li>Color de la Ropa del personaje y del puntaje editables.</li>
-						<li>Imagen del premio configurable. (1) premio.</li>
-						<li>Fondo fijo editable, detrás de los edificios.</li>
-					</ul>
-
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/ioRjN7Ged9A">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 320.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
-
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-<section id="gif" class="servicios bgb">
-	<h3 class="title-info">Gifmaton</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/gif.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					La gente se coloca frente a una cámara y se visualiza en una pantalla en espejo. Luego de una cuenta regresiva, la app empieza a generar un GIF animado. El GIF resultante -GIF loopeado que corre hacia adelante y cuando llega al final corre hacia atrás- se muestra en el costado de la pantalla. En ese espacio, pueden verse los últimos GIF que se han generado. A la vez, los GIF son descargados a una carpeta de la computadora para que sean subidos -manualmente- a las redes sociales por el cliente. (Consultar por subidas automáticas)
-
-
-				</div><div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Marca de Agua -con logo y/o otras imágenes- que se muestra por arriba del video en el GIF resultante. PNG 800 x 600px</li>
-						<li>Duración del GIF modificable</li>
-						<li>FrameRate del GIF modificable (para que quede más realista o más cómico)</li>
-					</ul>
-
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/yLjQh2qr-b8">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 210.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
-
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-<section id="rompec" class="servicios bgb">
-	<h3 class="title-info">Rompecabezas</h3>
-	<div class="apps-info">
-		<div class="image">
-				<img src="/catalogo/dist/assets/images/slider/rompecabeza.jpg" alt="">
-		</div>
-		<div class="desc tab-component">
-			<div class="btns btns-tab">
-				<button data-tab="tab-1">Dinámica</button>
-				<button data-tab="tab-2">Diseño</button>
-				<button data-tab="tab-3">Precio</button>
-				<a href="#" class="local-nav" data-sto="#apps">
-					<span>Catálogo</span>
-					<img src="/catalogo/dist/assets/images/che.svg" alt="up">
-				</a>
-			</div>
-			<div class="tabs">
-				<div class="tab tab-1">
-					Los participantes deberán resolver un rompecabezas personalizado con la imagen o video de tu marca.
-
-				</div>
-				<div class="tab tab-2">
-					<h5 class="subtitle">
-						¿Qué puede editarse del diseño y del juego?
-					</h5>
-					<ul>
-						<li>Formato de pantalla Horizontal 16:9 o Vertical 9:16</li>
-						<li>Se juega desde un LCD touch, o desde un ratón / pad</li>
-						<li>Formato de rompecabezas: imagen o video corto</li>
-						<li>Opciones de dificultad. Fácil: cubo (3x3) de 9 partes. Difícil: rectángulo de 15 partes (5x3)</li>
-						<li>Tiempo de juego modificable</li>
-						<li>CPosibilidad de editar textos del resultado del juego: ¡LO LOGRASTE!, ¡INTÉNTALO DE NUEVO!, etc.</li>
-					</ul>
-
-					<h5 class="subtitle">
-						¿En cuanto tiempo lo tengo?
-					</h5>
-					<ul>
-						<li>Tiempo de configuración: 4 días mínimo</li>
-					</ul>
-					<h5 class="subtitle">
-						Referencia
-					</h5>
-					<ul>
-						<li>
-							<a target="_blank" href="https://youtu.be/UGuNLQ0xuQg">
-								Ver video de referencia <img src="/catalogo/dist/assets/images/video.svg" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="tab tab-3">
-					<p class="precio">
-						El precio base es de $ 210.000.-
-						<br>
-						<span>Válido hasta el 1/9/2024</span>
-					</p>
-
-					<p>
-						El precio es por un día activación. Consultar por varios días.
-					</p>
-					<p>
-						Escribinos si necesitas mayor personalización!
-					</p>
-				</div>
-			</div>
-			<a href="#" class="contratar local-nav" data-sto="#contacto">Contratar <img src="/catalogo/dist/assets/images/chat.svg" alt=""></a>
-		</div>
-	</div>
-</section>
-
-			<footer class="main-footer">
-				<p>jumelab.com.ar</p>
-				<p>jumelab.info@gmail.com</p>
-				<a href="#" class="local-nav btn-top" data-sto="#top"></a>
-			</footer>		</main>
-	</body>
+                                <p>
+                                    El precio es por un día activación.
+                                    Consultar por varios días.
+                                </p>
+                                <p>
+                                    Escribinos si necesitas mayor
+                                    personalización!
+                                </p>
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="contratar local-nav"
+                            data-sto="#contacto"
+                            >Contratar
+                            <img
+                                src="/catalogo/dist/assets/images/chat.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+            </section>
+            <footer
+                id="contacto"
+                class="main-footer"
+            >
+                <p>jumelab.com.ar</p>
+                <p>jumelab.info@gmail.com</p>
+                <a
+                    href="#"
+                    class="local-nav btn-top"
+                    data-sto="#top"
+                ></a>
+            </footer>
+        </main>
+    </body>
 </html>
